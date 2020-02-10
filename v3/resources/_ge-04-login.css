@@ -1,0 +1,60 @@
+html,
+body,
+.logreg-wrapper {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+body {
+    background-image: url("bg.c2612cfb.jpg");
+    background-position: center;
+    font-size: 12px;
+}
+
+.logreg-wrapper {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 0 1em;
+    width: 100%;
+}
+
+.logreg-formbox {
+    background-color: var(--color-white);
+    border: var(--standard-border);
+    border-color: #3A4851;
+    display: block;
+    max-width: 700px;
+    margin: 1em auto;
+    overflow: hidden;
+    padding: 1rem;
+    width: 100%;
+}
+
+.logreg-formbox__header {
+    background-color: #3A4851;
+    color: var(--color-white);
+    margin: -1rem -1rem 1rem;
+    padding: 1rem;
+}
+
+.logreg-formbox__header > * {
+    margin: 0;
+}
+
+.logreg-formbox__form {
+    color: #222;
+    max-height: 240px;
+    padding-bottom: 0;
+    position: relative;
+    overflow-y: auto;
+}
+
+.logreg-formbox__form .switcher-pane {
+    padding: 0;
+}
+
+.logreg-formbox__footer {
+    padding-top: 0;
+}

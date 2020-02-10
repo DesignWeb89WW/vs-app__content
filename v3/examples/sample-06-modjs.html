@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="../resources/_ge-01-base.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/_ge-02-grid.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/_ge-03-select2-ui.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/_ge-05-site.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container-fluid">
+                Layout Header
+            </div>
+        </div>
+        <div class="main">
+            <aside class="sidebar">
+                <h1>Menu</h1>
+                <nav>
+                    <ul class="parent">
+                        <li><a class="active" href="sample-03-layout.html">Layout</a></li>
+                        <li><a href="sample-04-elements.html">Elements</a></li>
+                        <li><a href="sample-05-forms.html">Forms</a></li>
+                        <li><a href="sample-06-modjs.html">Mod JS</a></li>
+                        <li><a href="sample-01-login.html">Login</a></li>
+                        <li><a>Link</a></li>
+                        <li><a>Link</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="main-content">
+                <div class="main-content__container">
+                    <section class="main-content__section">
+                        <div class="tab-switcher default" id="switcheg2">
+                            <ul class="tabs">
+                                <li><a href="#pane1d" data-parent="switcheg2">Tab 1</a></li>
+                                <li><a class="active" href="#pane2d" data-parent="switcheg2">Tab 2</a></li>
+                            </ul>
+                            <ul class="switcher">
+                                <li class="switcher-pane" id="pane1d">
+                                    <div class="modal-dialog">
+                                        <div class="modal-header">
+                                            <button type="button" class="modal-close">&times;</button>
+                                            <h3 class="modal-title">Header</h3>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum.</p>
+                                        </div>
+                                        <div class="modal-footer text-right">
+                                            <button type="button">Okay</button>
+                                        </div>
+                                    </div>
+                                    <div class="modal" id="modal1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-header">
+                                                <a type="button" href="#modal1" class="modal-close close-modal">&times;</a>
+                                                <h3 class="modal-title">Header</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                                </p>
+                                            </div>
+                                            <div class="modal-footer text-right">
+                                                <button type="button">Okay</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <a href="#modal1" class="call-modal">Modal</a>
+                                    </p>
+                                </li>
+                                <li class="switcher-pane active" id="pane2d">
+                                    <ul class="accordion primary">
+                                        <li class="accordion-group">
+                                            <a class="accordion-title open" href="#">Name</a>
+                                            <div class="accordion-content open">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                <div class="dropdown">
+                                                    <button type="button" class="dropdown-button">Dropdown Callup</button>
+                                                    <ul class="dropdown-menu">
+                                                        <li class="dropdown-item">
+                                                            <a href="#">Link</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">Link</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a href="#">Link</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="accordion-group">
+                                            <a class="accordion-title" href="#">Name</a>
+                                            <div class="accordion-content">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="main-content__section">
+                        <div class="tab-switcher primary" id="switcheg">
+                            <ul class="tabs">
+                                <li><a href="#pane1" data-parent="switcheg">Tab 1</a></li>
+                                <li><a class="active" href="#pane2" data-parent="switcheg">Tab 2</a></li>
+                                <li><a href="#pane3" data-parent="switcheg">Tab 3</a></li>
+                            </ul>
+                            <ul class="switcher">
+                                <li class="switcher-pane" id="pane1">
+                                    <div class="alert">
+                                        <button type="button" class="close">&times;</button>
+                                        <p>Default - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="alert primary">
+                                        <button type="button" class="close">&times;</button>
+                                        <p>Primary - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="alert info">
+                                        <button type="button" class="close">&times;</button>
+                                        <p>Info -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="alert success">
+                                        <button type="button" class="close">&times;</button>
+                                        <p>Success - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="alert warning">
+                                        <p>Warning - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="alert danger">
+                                        <p>Danger - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </li>
+                                <li class="switcher-pane active" id="pane2">
+                                    <div class="tab-switcher primary row" id="switchleft">
+                                        <ul class="tabs tabs-left col-2">
+                                            <li><a class="active" href="#left1" data-parent="switchleft">Tab 1</a></li>
+                                            <li><a href="#left2" data-parent="switchleft">Tab 2</a></li>
+                                            <li><a href="#left3" data-parent="switchleft">Tab 3</a></li>
+                                        </ul>
+                                        <ul class="switcher col-10">
+                                            <li class="switcher-pane active" id="left1">
+                                                <h4>Switcher Left Styling</h4>
+                                                <p>Use the grid system to style this.</p>
+                                                <p>Positions can be altered to right by adding <code>tabs-right</code></p>
+                                            </li>
+                                            <li class="switcher-pane" id="left2">
+                                                <h4>Switcher Left Styling</h4>
+
+                                            </li>
+                                            <li class="switcher-pane" id="left3">
+                                                <h4>Switcher Left Styling</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="switcher-pane" id="pane3">
+                                    <p>Blank</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript" src="../resources/jquery-min.js"></script>
+    <script type="text/javascript" src="../resources/main.js"></script>
+</body>
+
+</html>
