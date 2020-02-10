@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/base/setup-ge.css" />
+    <link type="text/css" rel="stylesheet" href="css/layout/setup-layout.css" />
+    <link type="text/css" rel="stylesheet" href="css/modules/setup-mods.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="tab-switcher default" id="switcheg2">
+            <ul class="ge-tabs">
+                <li><a class="active" href="#pane1d" data-parent="switcheg2">Tab 1</a></li>
+                <li><a href="#pane2d" data-parent="switcheg2">Tab 2</a></li>
+            </ul>
+            <ul class="ge-switcher">
+                <li class="ge-switcher-pane active" id="pane1d">
+                    <div class="ge-modal-dialog">
+                        <div class="ge-modal-header">
+                            <button type="button" class="ge-modal-close">&times;</button>
+                            <h3 class="ge-modal-title">Header</h3>
+                        </div>
+                        <div class="ge-modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="ge-modal-footer text-right">
+                            <button type="button">Okay</button>
+                        </div>
+                    </div>
+                    <div class="ge-modal" id="modal1">
+                        <div class="ge-modal-dialog">
+                            <div class="ge-modal-header">
+                                <a type="button" href="#modal1" class="ge-modal-close close-modal">&times;</a>
+                                <h3 class="ge-modal-title">Header</h3>
+                            </div>
+                            <div class="ge-modal-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                            <div class="ge-modal-footer text-right">
+                                <button type="button">Okay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        <a href="#modal1" class="call-modal">Modal</a>
+                    </p>
+                </li>
+                <li class="ge-switcher-pane" id="pane2d">
+                    <ul class="ge-accordion primary">
+                        <li class="ge-accordion-group">
+                            <a class="ge-accordion-title" href="#">Name</a>
+                            <div class="ge-accordion-content open">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </li>
+                        <li class="ge-accordion-group">
+                            <a class="ge-accordion-title" href="#">Name</a>
+                            <div class="ge-accordion-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </li>
+                    </ul>                
+                </li>
+            </ul>
+        </div>
+        <div class="tab-switcher primary" id="switcheg">
+            <ul class="ge-tabs">
+                <li><a href="#pane1" data-parent="switcheg">Tab 1</a></li>
+                <li><a href="#pane2" data-parent="switcheg">Tab 2</a></li>
+                <li><a class="active" href="#pane3" data-parent="switcheg">Tab 3</a></li>
+            </ul>
+            <ul class="ge-switcher">
+                <li class="ge-switcher-pane" id="pane1">
+                    <div class="ge-alert">
+                        <button type="button" class="close">&times;</button>
+                        <p>Default - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="ge-alert primary">
+                        <button type="button" class="close">&times;</button>
+                        <p>Primary - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="ge-alert info">
+                        <button type="button" class="close">&times;</button>
+                        <p>Info -Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="ge-alert success">
+                        <button type="button" class="close">&times;</button>
+                        <p>Success - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="ge-alert warning">
+                        <p>Warning - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="ge-alert danger">
+                        <p>Danger - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </li>
+                <li class="ge-switcher-pane" id="pane2">
+                    <div class="tab-switcher primary" id="switchleft">
+                        <ul class="ge-tabs ge-tabs-left">
+                            <li><a class="active" href="#" data-parent="switchleft">Tab 1</a></li>
+                            <li><a href="#" data-parent="switchleft">Tab 2</a></li>
+                            <li><a href="#" data-parent="switchleft">Tab 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="ge-switcher-pane active" id="pane3">
+                    <p>
+                    <a class="button btn-primary">Primary</a>
+                    <a class="button btn-secondary">Secondary</a>
+                    <a class="button btn-info">Info</a>
+                    <a class="button btn-success">Success</a>
+                    <a class="button btn-warning">Warning</a>
+                    <a class="button btn-danger">Danger</a>
+                </p>
+                <p>
+                        <a class="button outline btn-primary">Primary</a>
+                        <a class="button outline btn-secondary">Secondary</a>
+                        <a class="button outline btn-info">Info</a>
+                        <a class="button outline btn-success">Success</a>
+                        <a class="button outline btn-warning">Warning</a>
+                        <a class="button outline btn-danger">Danger</a>
+                    </p>
+                    <p>
+                            <a class="button semi btn-primary">Primary</a>
+                            <a class="button semi btn-secondary">Secondary</a>
+                            <a class="button semi btn-info">Info</a>
+                            <a class="button semi btn-success">Success</a>
+                            <a class="button semi btn-warning">Warning</a>
+                            <a class="button semi btn-danger">Danger</a>
+                        </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="vendor/jquery-min.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+﻿.ge-accordion,
+.ge-accordion-group,
+.ge-accordion-title {
+    display: block;
+    position: relative;
+}
+
+.ge-accordion {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ge-accordion-title {
+    color: inherit;
+    padding: 1em;
+}
+
+.ge-accordion-content {
+    display: none;
+    padding: 1em;
+}
+
+.ge-accordion-content.open {
+    display: block;
+}

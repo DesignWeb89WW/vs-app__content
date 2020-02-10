@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Forms</title>
+    <link type="text/css" rel="stylesheet" href="css/base/setup-ge.css" />
+    <link type="text/css" rel="stylesheet" href="css/layout/setup-layout.css" />
+    <link type="text/css" rel="stylesheet" href="css/modules/setup-mods.css" />
+</head>
+<body>
+    <div class="container-fluid">
+        <p>
+            <input type="button" value="Input Button" />
+            <input type="reset" value="Input Reset" />
+            <input type="submit" value="Input Submit" />
+        </p>
+        <p>
+            Checkbox:
+            <input type="checkbox" />
+            <input type="checkbox" checked="checked" />
+            <input type="checkbox" checked="checked" disabled="disabled" />
+            &radic;
+            Radio:
+            <input type="radio" checked="checked" />
+            <input type="radio" />
+            <input type="radio" checked="checked" disabled="disabled" />
+        </p>
+        <p>
+            <span class="ge-asp-input aspNetDisabled">
+                <input type="radio" checked="checked" />
+                <label>Simulate ASP Input</label>
+            </span>
+        </p>
+
+        <p>
+            <span class="ge-asp-input">
+                <input type="checkbox" checked="checked" id="asp-check" />
+                <label for="asp-check">Simulate ASP Input</label>
+            </span>
+        </p>
+        <table class="ge-asp-inputlist">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="radio" name="asp-list" id="aspil1" checked="checked" />
+                        <label for="aspil1">Asp Input List</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="asp-list" id="aspil2" />
+                        <label for="aspil2">Asp Input List</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <span class="ge-asp-input-toggle">
+                <input type="checkbox" id="asp-toggle" />
+                <label for="asp-toggle">
+                    <span class="sr-only">Toggle</span>
+                </label>
+            </span>
+        </p>
+
+        <hr />
+        <input type="text" placeholder="Textfield" class="mb1" />
+        <input type="email" placeholder="Email" class="mb1" />
+        <input type="password" placeholder="Password" class="mb1" />
+        <input type="date" placeholder="Datepicker" class="mb1" />
+        <input type="file" class="mb1" />
+        <textarea class="mb1"></textarea>
+        <select class="mb1">
+            <option>Select</option>
+        </select>
+        <div class="file-upload mb1">
+            <input type="text" placeholder="Textfield" class="file-upload-field" />
+            <div class="file-upload-btn">
+                <input type="file" />
+                <span>Upload</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

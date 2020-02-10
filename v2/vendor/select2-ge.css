@@ -1,0 +1,80 @@
+﻿body {
+    overflow-x: hidden;
+}
+
+select[aria-hidden="true"] {
+    display: none !important;
+    visibility: hidden;
+    width: 100%;
+}
+
+.select2-container {
+    display: block;
+    width: 100% !important;
+}
+
+.select2-container * {
+    display: block;
+    position: relative;
+}
+
+.select2-selection {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.select2-selection__rendered {
+    padding: .8em;
+}
+
+.select2-selection__arrow {
+    background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+    background-size: 8px 10px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+}
+
+.select2-dropdown {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.select2-search {
+    padding: 10px;
+}
+
+.select2-search input {
+    display: block;
+    padding: .5em .8em;
+    width: 100%;
+}
+
+.select2-results {
+    border-top: 1px solid #ccc;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.select2-results__options {
+    margin: 0;
+    padding: 0;
+}
+
+.select2-results__option {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+}
+
+.select2-results__options > .select2-results__option--highlighted {
+    background-color: #dedede;
+}

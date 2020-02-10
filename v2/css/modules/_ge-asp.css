@@ -1,0 +1,98 @@
+.ge-dummy-btn {
+    overflow: hidden;
+    position: relative;
+}
+
+.ge-dummy-btn input {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.ge-asp-input {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+
+.ge-asp-inputlist,
+.ge-asp-togglegroup {
+    background: none;
+    width: auto;
+}
+
+.ge-asp-input label,
+.ge-asp-inputlist label {
+    cursor: pointer;
+    display: var(--dis-inline-b);
+    margin-left: 4px;
+    position: var(--pos-relative);
+    font-size: .9em;
+    vertical-align: middle;
+}
+
+.ge-asp-inputlist tbody>tr>td {
+    border: none;
+    padding: 0 .8em 0 0;
+    position: relative;
+}
+
+.ge-asp-togglegroup tbody>tr>td {
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+.ge-asp-togglegroup input {
+    opacity: 0;
+    position: absolute;
+}
+
+.ge-asp-togglegroup label {
+    background-color: #007bff;
+    border: 1px solid var(--color-primary-1);
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    padding: .5rem .9rem;
+    position: relative;
+}
+
+.ge-asp-togglegroup td+td label {
+    border-left: 0;
+}
+
+.ge-asp-togglegroup td:first-child label {
+    border-radius: 5px 0 0 5px;
+}
+
+.ge-asp-togglegroup td:last-child label {
+    border-radius: 0 5px 5px 0;
+}
+
+.ge-asp-togglegroup input:checked~label {
+    background-color: #fff;
+    color: #0069d9;
+}
+
+.ge-asp-gridview>tbody>tr:first-child table td,
+.ge-asp-gridview>tbody>tr:last-child table td {
+    padding: 0;
+}
+
+.ge-asp-gridview>tbody>tr:first-child table a,
+.ge-asp-gridview>tbody>tr:first-child table span,
+.ge-asp-gridview>tbody>tr:last-child table a,
+.ge-asp-gridview>tbody>tr:last-child table span {
+    display: block;
+    padding: .4rem;
+}
+
+.ge-asp-gridview>tbody>tr:first-child table a,
+.ge-asp-gridview>tbody>tr:last-child table a {
+    background-color: var(--color-primary-2);
+}

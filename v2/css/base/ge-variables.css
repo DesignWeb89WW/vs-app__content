@@ -1,0 +1,46 @@
+:root {
+    --col-padding: .5rem;
+    --col-margin: -var(--col-padding);
+    --color-primary-1: #1e87f0;
+    --color-primary-2: #d8eafc;
+    --color-secondary-1: #222;
+    --color-secondary-2: #c9c9c9;
+    --color-info-1: #17a2b8;
+    --color-info-2: #c8f4fb;
+    --color-success-1: #32d296;
+    --color-success-2: #edfbf6;
+    --color-danger-1: #f0506e;
+    --color-danger-2: #fde6eb;
+    --color-warning-1: #faa05a;
+    --color-warning-2: #fff6ee;
+    /*Color Codings*/
+    --color-blue: #038ff4;
+    --color-dark-1: #111;
+    --color-dark-2: #222;
+    --color-dark-3: #333;
+    --color-dark-4: #444;
+    --color-darkblue: #000fa5;
+    --color-grey-1: #ccc;
+    --color-grey-2: #e5e5e5;
+    --color-white: #fff;
+    --grss-darkblue: rgb(32, 56, 100);
+    --grss-mediumblue: #3b73b9;
+    /*Spacings, Positions, Display*/
+    --space-1: 1rem;
+    --space-2: 2rem;
+    --space-3: 3rem;
+    --space-4: 4rem;
+    --space-listing: 1.5em;
+    --pos-fixed: fixed;
+    --pos-relative: relative;
+    --pos-absolute: fixed;
+    --dis-block: block;
+    --dis-flex: flex;
+    --dis-inline: inline;
+    --dis-inline-b: inline-block;
+    --dis-none: none;
+    --m0: 0;
+    --mtb1: 1rem 0;
+    --mtb2: 2rem 0;
+    --bx-shadow: 0 2px 2px rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+}

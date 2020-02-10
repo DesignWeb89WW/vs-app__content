@@ -1,0 +1,156 @@
+﻿.form-label,
+.col-form-label {
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.form-group,
+.form-row {
+    clear: both;
+    display: block;
+    margin-bottom: var(--space-1);
+    padding: 0;
+}
+
+.form-row {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    list-style: none;
+    margin-left: var(--col-margin);
+    margin-right: var(--col-margin);
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+.form-row>.form-label,
+.form-row>.col-form-label,
+.form-row>.col {
+    display: block;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: var(--col-padding);
+    padding-right: var(--col-padding);
+    position: relative;
+    width: 100%;
+}
+
+.file-upload {
+    border: 1px solid var(--color-grey-1);
+    display: inline-block;
+    padding-right: 100px;
+    position: relative;
+}
+
+.file-upload [type="text"] {
+    border: 0;
+}
+
+.file-upload-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.file-upload-btn span {
+    background-color: var(--color-primary-2);
+    border-left: 1px solid var(--color-grey-1);
+    display: block;
+    padding: .8em;
+    text-align: center;
+}
+
+.file-upload-btn input {
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.icon-field-group {
+    border: 1px solid var(--color-info-1);
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.icon-field-group input {
+    border: none;
+    position: relative;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+    padding: .575rem;
+}
+
+.icon-field-prepend {
+    background-color: var(--color-info-2);
+    color: var(--color-info-1);
+    display: flex;
+    flex-grow: 0;
+}
+
+.icon-field-prepend span {
+    align-items: center;
+    border-right: 1px solid var(--color-info-1);
+    padding: .575rem;
+}
+
+@media(min-width: 768px) {
+    .form-row>.form-label,
+    .form-row>.col-form-label {
+        padding-top: 12px;
+    }
+    .form-row .ge-asp-input,
+    .form-row .ge-asp-inputlist {
+        margin-top: 12px;
+    }
+    .form-row>.form-label,
+    .form-row>.col-form-label,
+    .form-row>.col {
+        flex-basis: 0;
+    }
+    .fr-1-11 .form-row>.form-label,
+    .fr-1-11 .form-row>.col-form-label {
+        max-width: 8.33333%;
+    }
+    .fr-1-11 .form-row>.col {
+        max-width: 91.66667%;
+    }
+    .fr-2-10 .form-row>.form-label,
+    .fr-2-10 .form-row>.col-form-label {
+        max-width: 16.66667%;
+    }
+    .fr-2-10 .form-row>.col {
+        max-width: 83.33333%;
+    }
+    .fr-3-9 .form-row>.form-label,
+    .fr-3-9 .form-row>.col-form-label {
+        max-width: 25%;
+    }
+    .fr-3-9 .form-row>.col {
+        max-width: 75%;
+    }
+    .fr-4-8 .form-row>.form-label,
+    .fr-4-8 .form-row>.col-form-label {
+        max-width: 33.33333%;
+    }
+    .fr-4-8 .form-row>.col {
+        max-width: 66.66667%;
+    }
+}

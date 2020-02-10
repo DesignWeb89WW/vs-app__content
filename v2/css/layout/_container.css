@@ -1,0 +1,26 @@
+﻿/*
+    * Document Name: container.css
+    * Document Type: Stylesheet
+    * Purpose: For Wrapping of content
+*/
+
+.container, .container-fluid {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    padding-left: var(--col-padding);
+    padding-right: var(--col-padding);
+    width: 100%;
+}
+
+.container.narrow {
+    max-width: 600px;
+}
+
+.col, .module {
+    display: block;
+    min-height: 1px;
+    padding-left: var(--col-padding);
+    padding-right: var(--col-padding);
+    position: relative;
+}

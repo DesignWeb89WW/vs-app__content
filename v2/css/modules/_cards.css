@@ -1,0 +1,33 @@
+﻿.ge-card {
+    background-color: #fff;
+    box-shadow: var(--bx-shadow);
+}
+
+.ge-card-image,
+.ge-card-action,
+.ge-card-content,
+.ge-card-footer,
+.ge-card-reveal {
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.ge-card-content,
+.ge-card-footer,
+.ge-card-action {
+    font-size: .9em;
+    padding: 10px;
+}
+
+.ge-card-image img,
+img.ge-card-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.ge-card-footer,
+.ge-card-action {
+    border-top: 1px solid #bcbcbc;
+}

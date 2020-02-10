@@ -1,0 +1,100 @@
+﻿
+/*----------------------------------------------------------------------*/
+/* DATEPICKER - USING UI JQUERY */
+/*----------------------------------------------------------------------*/
+
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker tr,
+.ui-datepicker td,
+.ui-datepicker th {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-spacing: 0;
+    text-align: center;
+}
+
+#ui-datepicker-div { display: none; }
+
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after
+{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+/*----------------------------------------------------------------------*/
+/* DATEPICKER - STYLING */
+/*----------------------------------------------------------------------*/
+
+.ui-datepicker
+{
+    background-color: #efefef;
+    border: 1px solid #cdcdcd;
+    display: block;
+    max-width: 300px;
+    padding: 1.2em;
+    position: relative;
+}
+
+.ui-datepicker-header
+{
+    display: block;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+.ui-datepicker-prev { left: 0; }
+.ui-datepicker-next { right: 0; }
+
+.ui-datepicker table
+{
+    background-color: #fff;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.ui-datepicker table tr > th,
+.ui-datepicker table tr > td
+{
+    border: 1px solid #bbb;
+    font-size: 12px;
+    height: 30px;
+}
+
+.ui-datepicker table th > a,
+.ui-datepicker table td > a,
+.ui-datepicker table th > span,
+.ui-datepicker table td > span
+{
+    display: block;
+    padding: .5rem;
+}
+
+.ui-datepicker table .ui-state-hover
+{
+    background-color: #cecece;
+    color: #000;
+}
+
+    .ui-datepicker table .ui-datepicker-today .ui-state-highlight {
+        background-color: #787878;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    .ui-datepicker table .ui-datepicker-current-day .ui-state-active {
+        background-color: #649ee6;
+        color: #fff;
+        font-weight: 700;
+    }

@@ -1,0 +1,119 @@
+﻿.ge-tabs, .ge-switcher {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ge-tabs li,
+.ge-tabs a {
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.ge-tabs a,
+.ge-switcher-pane {
+    padding: 10px;
+}
+
+/*------------------------------------------------------------------*/
+
+.ge-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ge-tabs:before {
+    bottom: 0;
+    border-bottom: 1px solid #e5e5e5;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.ge-tabs li {
+    flex: none;
+}
+
+.ge-tabs a {
+    color: inherit;
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.ge-switcher-pane {
+    display: none;
+}
+
+.ge-switcher-pane.active {
+    display: block;
+}
+
+/*------------------------------------------------------------------*/
+/* Default */
+/*------------------------------------------------------------------*/
+
+.default > .ge-tabs a {
+    color: #bbb;
+}
+
+.default > .ge-tabs .active {
+    border-bottom: 1px solid #444;
+    color: #333;
+}
+
+/*------------------------------------------------------------------*/
+/* Primary */
+/*------------------------------------------------------------------*/
+
+.primary > .ge-tabs a {
+    color: #888;
+}
+
+.primary > .ge-tabs a:hover {
+    color: #555;
+}
+
+.primary > .ge-tabs .active {
+    border-bottom: 1px solid #1e87f0;
+    color: #333;
+}
+
+/*------------------------------------------------------------------*/
+/* Left Right */
+/*------------------------------------------------------------------*/
+
+.ge-tabs-left, 
+.ge-tabs-right {
+    display: block;
+    width: 100%;
+}
+
+.ge-tabs-left:before {
+    top: 0;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: none;
+    width: 1px;
+}
+
+.ge-tabs-right:before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid #e5e5e5;
+    border-bottom: none;
+    width: 1px;
+}
+
+.primary > .ge-tabs-left .active {
+    border-bottom: 0;
+    border-right: 1px solid #1e87f0;
+}

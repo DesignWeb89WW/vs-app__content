@@ -1,0 +1,63 @@
+﻿.ge-dropdown {
+    position: relative;
+}
+
+.ge-dropdown > a {
+    color: inherit;
+    display: block;
+    padding: 1em;
+}
+
+.ge-dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: none;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    position: absolute;
+    top: 100%;
+    width: 180px;
+    z-index: 5;
+}
+
+.ge-dropdown-item {
+    display: block;
+    margin: 0;
+    position: relative;
+}
+
+.ge-dropdown-link {
+    color: inherit;
+    display: block;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.ge-dropdown-menu.right {
+    left: auto;
+    right: 0;
+}
+
+.show .ge-dropdown-menu {
+    display: block;
+}
+
+.divider {
+    background-color: #bbb;
+    display: block;
+    height: 1px;
+    margin: .5rem 0;
+    width: 100%;
+}
+
+.icon-present .ge-dropdown-link {
+    padding-left: 2.6em;
+}
+.icon-present .ge-dropdown-link .fa {
+    left: 8px;
+    position: absolute;
+}

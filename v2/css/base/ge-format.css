@@ -1,0 +1,299 @@
+﻿.btn-primary,
+.btn-info,
+.btn-secondary,
+.btn-success,
+.btn-danger,
+.btn-warning {
+    color: var(--color-white);
+}
+
+.btn-primary.outline:hover,
+.btn-info.outline:hover,
+.btn-secondary.outline:hover,
+.btn-success.outline:hover,
+.btn-danger.outline:hover,
+.btn-warning.outline:hover,
+.btn-primary.semi:hover,
+.btn-info.semi:hover,
+.btn-secondary.semi:hover,
+.btn-success.semi:hover,
+.btn-danger.semi:hover,
+.btn-warning.semi:hover {
+    color: var(--color-white);
+}
+
+.btn-primary.outline,
+.btn-info.outline,
+.btn-secondary.outline,
+.btn-success.outline,
+.btn-danger.outline,
+.btn-warning.outline,
+.btn-primary:hover,
+.btn-info:hover,
+.btn-secondary:hover,
+.btn-success:hover,
+.btn-danger:hover,
+.btn-warning:hover {
+    background-color: var(--color-white);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+
+/*--------------------------------------*/
+
+
+/* Primary */
+
+
+/*--------------------------------------*/
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary.outline,
+.btn-primary.semi {
+    border-color: var(--color-primary-1);
+}
+
+.btn-primary,
+.btn-primary.outline:hover,
+.btn-primary.semi:hover {
+    background-color: var(--color-primary-1);
+}
+
+.btn-primary.semi {
+    background-color: var(--color-primary-2);
+}
+
+.btn-primary.outline,
+.btn-primary.semi,
+.btn-primary:hover {
+    color: var(--color-primary-1);
+}
+
+.primary .ge-accordion-title,
+.primary.ge-alert,
+blockquote.primary {
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-1);
+    color: var(--color-primary-1);
+}
+
+.ge-modal-dialog.primary,
+.ge-modal-dialog.primary .ge-modal-header,
+.ge-modal-dialog.primary .ge-modal-footer {
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-1);
+    color: var(--color-primary-1);
+}
+
+
+/*--------------------------------------*/
+
+
+/* Secondary */
+
+
+/*--------------------------------------*/
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary.outline,
+.btn-secondary.semi {
+    border-color: var(--color-secondary-1);
+}
+
+.btn-secondary,
+.btn-secondary.outline:hover,
+.btn-secondary.semi:hover {
+    background-color: var(--color-secondary-1);
+}
+
+.btn-secondary.semi {
+    background-color: var(--color-secondary-2);
+}
+
+.btn-secondary.outline,
+.btn-secondary.semi,
+.btn-secondary:hover {
+    color: var(--color-secondary-1);
+}
+
+.secondary .ge-accordion-title,
+.secondary.ge-alert,
+blockquote.secondary {
+    background-color: var(--color-secondary-2);
+    border-color: var(--color-secondary-1);
+    color: var(--color-secondary-1);
+}
+
+.ge-modal-dialog.secondary,
+.ge-modal-dialog.secondary .ge-modal-header,
+.ge-modal-dialog.secondary .ge-modal-footer {
+    background-color: var(--color-secondary-2);
+    border-color: var(--color-secondary-1);
+    color: var(--color-secondary-1);
+}
+
+
+/*--------------------------------------*/
+
+
+/* info */
+
+
+/*--------------------------------------*/
+
+.btn-info,
+.btn-info:hover,
+.btn-info.outline,
+.btn-info.semi {
+    border-color: var(--color-info-1);
+}
+
+.btn-info,
+.btn-info.outline:hover,
+.btn-info.semi:hover {
+    background-color: var(--color-info-1);
+}
+
+.btn-info.semi {
+    background-color: var(--color-info-2);
+}
+
+.btn-info.outline,
+.btn-info.semi,
+.btn-info:hover {
+    color: var(--color-info-1);
+}
+
+.info .ge-accordion-title,
+.info.ge-alert,
+blockquote.info {
+    background-color: var(--color-info-2);
+    border-color: var(--color-info-1);
+    color: var(--color-info-1);
+}
+
+
+/*--------------------------------------*/
+
+
+/* Success */
+
+
+/*--------------------------------------*/
+
+.btn-success,
+.btn-success:hover,
+.btn-success.outline,
+.btn-success.semi {
+    border-color: var(--color-success-1);
+}
+
+.btn-success,
+.btn-success.outline:hover,
+.btn-success.semi:hover {
+    background-color: var(--color-success-1);
+}
+
+.btn-success.semi {
+    background-color: var(--color-success-2);
+}
+
+.btn-success.outline,
+.btn-success.semi,
+.btn-success:hover {
+    color: var(--color-success-1);
+}
+
+.success .ge-accordion-title,
+.success.ge-alert,
+blockquote.success {
+    background-color: var(--color-success-2);
+    border-color: var(--color-success-1);
+    color: var(--color-success-1);
+}
+
+
+/*--------------------------------------*/
+
+
+/* warning */
+
+
+/*--------------------------------------*/
+
+.btn-warning,
+.btn-warning:hover,
+.btn-warning.outline,
+.btn-warning.semi {
+    border-color: var(--color-warning-1);
+}
+
+.btn-warning,
+.btn-warning.outline:hover,
+.btn-warning.semi:hover {
+    background-color: var(--color-warning-1);
+}
+
+.btn-warning.semi {
+    background-color: var(--color-warning-2);
+}
+
+.btn-warning.outline,
+.btn-warning.semi,
+.btn-warning:hover {
+    color: var(--color-warning-1);
+}
+
+.warning .ge-accordion-title,
+.warning.ge-alert,
+blockquote.warning {
+    background-color: var(--color-warning-2);
+    border-color: var(--color-warning-1);
+    color: var(--color-warning-1);
+}
+
+
+/*--------------------------------------*/
+
+
+/* danger */
+
+
+/*--------------------------------------*/
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger.outline,
+.btn-danger.semi {
+    border-color: var(--color-danger-1);
+}
+
+.btn-danger,
+.btn-danger.outline:hover,
+.btn-danger.semi:hover {
+    background-color: var(--color-danger-1);
+}
+
+.btn-danger.semi {
+    background-color: var(--color-danger-2);
+}
+
+.btn-danger.outline,
+.btn-danger.semi,
+.btn-danger:hover {
+    color: var(--color-danger-1);
+}
+
+.danger .ge-accordion-title,
+.danger.ge-alert,
+blockquote.danger {
+    background-color: var(--color-danger-2);
+    border-color: var(--color-danger-1);
+    color: var(--color-danger-1);
+}
