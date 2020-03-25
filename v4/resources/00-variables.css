@@ -1,0 +1,81 @@
+/*
+* Document Name: 00-variables.css
+* Document Type: Stylesheet
+* Purpose: Custom Properties for styling
+*/
+
+:root {
+    --color-blue-1: #17a2b8;
+    --color-blue-2: #c8f4fb;
+    --color-blue-grss: #2858f5;
+    --color-grey-1: #aaa;
+    --color-grey-2: #ccc;
+    --color-grey: var(--color-grey-2);
+    --color-white: #fff;
+    --standard-border: 1px solid var(--color-grey-2);
+    /*------------------*/
+    /*BUTTON COLORS*/
+    /*------------------*/
+    --color-danger-1: #f0506e;
+    --color-danger-2: #fde6eb;
+    --color-info-1: #17a2b8;
+    --color-info-2: #c8f4fb;
+    --color-primary-1: #1e87f0;
+    --color-primary-2: #d8eafc;
+    --color-secondary-1: #222;
+    --color-secondary-2: #c9c9c9;
+    --color-success-1: #32d296;
+    --color-success-2: #edfbf6;
+    --color-warning-1: #faa05a;
+    --color-warning-2: #fff6ee;
+    /*------------------*/
+    /*MARGINS*/
+    /*------------------*/
+    --margin-tb1: 1rem 0;
+    --spacing-1: 1rem;
+    --spacing-2: 2rem;
+    --spacing-3: 3rem;
+    --space-listing: 1.6em;
+    /*------------------*/
+    /*GRID SYSTEM*/
+    /*------------------*/
+    --col-margin: -.5rem;
+    --col-padding: .5rem;
+    /* Column Grid Widths */
+    --width-1: 8.333333%;
+    --width-2: 16.666667%;
+    --width-3: 25%;
+    --width-4: 33.333333%;
+    --width-5: 41.666667%;
+    --width-6: 50%;
+    --width-7: 58.333333%;
+    --width-8: 66.666667%;
+    --width-9: 75%;
+    --width-10: 83.333333%;
+    --width-11: 91.666667%;
+    --width-12: 100%;
+    /*Flex Width*/
+    --flex-width-1: 0 0 var(--width-1);
+    --flex-width-2: 0 0 var(--width-2);
+    --flex-width-3: 0 0 var(--width-3);
+    --flex-width-4: 0 0 var(--width-4);
+    --flex-width-5: 0 0 var(--width-5);
+    --flex-width-6: 0 0 var(--width-6);
+    --flex-width-7: 0 0 var(--width-7);
+    --flex-width-8: 0 0 var(--width-8);
+    --flex-width-9: 0 0 var(--width-9);
+    --flex-width-10: 0 0 var(--width-10);
+    --flex-width-11: 0 0 var(--width-11);
+    --flex-width-12: 0 0 var(--width-12);
+    /*Custom Widths */
+    --width-cs_fifth: 20%;
+    --width-cs_sevens: 14.285%;
+    --width-cs_eights: 12.5%;
+    --width-cs_nines: 11.11111%;
+    --width-cs_tens: 10%;
+    --flex-width-cs-fifth: 0 0 var(--width-cs_fifth);
+    --flex-width-cs-sevens: 0 0 var(--width-cs_sevens);
+    --flex-width-cs-eights: 0 0 var(--width-cs_eights);
+    --flex-width-cs-nines: 0 0 var(--width-cs_nines);
+    --flex-width-cs-tens: 0 0 var(--width-cs_tens);
+}

@@ -1,0 +1,563 @@
+/*
+* Document Name: 03-mods.css
+* Document Type: Stylesheet
+* Purpose: Custom Properties for styling components and mods
+*/
+
+/*-----------------------------------------------*/
+/* CLASSES: ALERTS */
+/*-----------------------------------------------*/
+
+.alert {
+    background-color: var(--color-white);
+    border: var(--standard-border);
+    display: block;
+    margin: var(--margin-tb1);
+    padding: var(--spacing-1);
+    position: relative;
+}
+
+.alert > .close {
+    background: none;
+    border: 0;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .5em;
+    top: .5em;
+}
+
+.alert table:only-of-type,
+.alert button:only-of-type {
+    margin: 0;
+}
+
+.alert:first-of-type {
+    margin-top: 0;
+}
+
+/*-----------------------------------------------*/
+/* CLASSES: ACCORDION */
+/*-----------------------------------------------*/
+
+.accordion {
+    font-size: 13px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.accordion-group {
+    display: block;
+    margin-bottom: .6rem;
+}
+
+.accordion-title {
+    background-color: var(--color-info-1);
+    border: 1px solid var(--color-info-1);
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: .8rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.accordion-title.open {
+    background-color: var(--color-info-2);
+    color: var(--color-info-1);
+}
+
+.accordion-content {
+    display: none;
+    padding: .8rem;
+    position: relative;
+}
+
+.accordion-content.open {
+    display: block;
+}
+
+/*---------- Styling ----------*/
+
+.accordion-title:after {
+    content: "\002b";
+    font-family: 'Glyphicons Halflings';
+    font-size: .8em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    position: absolute;
+    right: 1em;
+}
+
+.accordion-title.open:after {
+    content: "\2212";
+}
+
+.accordion-content {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-info-1);
+    border-top: 0;
+}
+
+/*-----------------------------------------------*/
+/* CLASSES: CARDS */
+/*-----------------------------------------------*/
+
+.card {
+    display: block;
+}
+
+.card-head,
+.card-body,
+.card-foot {
+    display: block;
+    position: relative;
+}
+
+.card-head {
+    border-bottom: 1px solid #e5e5e5;
+    padding: .5rem 1rem;
+}
+
+.card-foot {
+    border-top: 1px solid #e5e5e5;
+    padding: .5rem 1rem;
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-media {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-media img {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+/*---------- Styling ----------*/
+
+.card.default {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    color: #666;
+}
+
+/*-----------------------------------------------*/
+/* CLASSES: MODALS */
+/*-----------------------------------------------*/
+
+.modal {
+    align-items: center;
+    display: flex;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    padding: 0 15px;
+    position: fixed;
+    transition: opacity 0.4s ease-out;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -10;
+}
+
+.modal-dialog {
+    background-color: var(--color-white);
+    border: var(--standard-border);
+    box-sizing: border-box;
+    margin: 0 auto 1em;
+    position: relative;
+    max-width: 600px;
+}
+
+.modal-title {
+    font-size: 1.5em;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    background-color: var(--color-white);
+    display: block;
+    position: relative;
+}
+
+.modal-header {
+    border-bottom: var(--standard-border);
+    padding: 1em 1.2em;
+}
+
+.modal-body {
+    padding: 1.2em;
+}
+
+.modal-footer {
+    border-top: var(--standard-border);
+    padding: 1em 1.2em;
+}
+
+.modal-footer button,
+.modal-footer .button {
+    margin: 0;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 1.7em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: .5em;
+    text-decoration: none;
+    top: .2em;
+}
+
+.modal-header .modal-close {
+    top: 25%;
+}
+
+body.modal-active {
+    overflow: hidden;
+}
+
+.modal-active .modal.show {
+    opacity: 1;
+    z-index: 20;
+}
+
+.modal-closing .modal.show {
+    opacity: 0;
+    z-index: 20;
+}
+
+/*---------- Types ----------*/
+
+.modal-image {
+    min-width: 200px;
+}
+
+.modal-image .modal-close {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.modal-popup {
+    max-width: 900px;
+    min-width: 200px;
+    padding: 1rem;
+}
+
+.modal-popup__header {
+    background-color: #fcfcfc;
+    font-size: 1.3rem;
+    margin: -1rem -1rem 1rem;
+    padding: 1rem;
+}
+
+/*-----------------------------------------------*/
+/* CLASSES: STRUCTURE ELEMENTS */
+/*-----------------------------------------------*/
+
+.guide-section {
+    box-shadow: 0 5px 4px rgba(0,0,0,.7);
+    display: block;
+    margin: 0 0 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.guide-section > header {
+    margin: -1rem -1rem 1rem;
+    padding: 1rem;
+}
+
+/*-----------------------------------------------*/
+/* CLASSES: BUTTONS */
+/*-----------------------------------------------*/
+
+.btn-primary,
+.btn-info,
+.btn-secondary,
+.btn-success,
+.btn-danger,
+.btn-warning {
+    color: var(--color-white);
+}
+
+.btn-primary.outline:hover,
+.btn-info.outline:hover,
+.btn-secondary.outline:hover,
+.btn-success.outline:hover,
+.btn-danger.outline:hover,
+.btn-warning.outline:hover,
+.btn-primary.semi:hover,
+.btn-info.semi:hover,
+.btn-secondary.semi:hover,
+.btn-success.semi:hover,
+.btn-danger.semi:hover,
+.btn-warning.semi:hover {
+    color: var(--color-white);
+}
+
+.btn-primary.outline,
+.btn-info.outline,
+.btn-secondary.outline,
+.btn-success.outline,
+.btn-danger.outline,
+.btn-warning.outline,
+.btn-primary:hover,
+.btn-info:hover,
+.btn-secondary:hover,
+.btn-success:hover,
+.btn-danger:hover,
+.btn-warning:hover {
+    background-color: var(--color-white);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+/*--------------------------------------*/
+/* Color Coding: Primary */
+/*--------------------------------------*/
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary.outline,
+.btn-primary.semi {
+    border-color: var(--color-primary-1);
+}
+
+.btn-primary,
+.btn-primary.outline:hover,
+.btn-primary.semi:hover {
+    background-color: var(--color-primary-1);
+}
+
+.btn-primary.semi {
+    background-color: var(--color-primary-2);
+}
+
+.btn-primary.outline,
+.btn-primary.semi,
+.btn-primary:hover {
+    color: var(--color-primary-1);
+}
+
+.primary .accordion-title,
+.primary.alert,
+blockquote.primary {
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-1);
+    color: var(--color-primary-1);
+}
+
+.modal-dialog.primary,
+.modal-dialog.primary .modal-header,
+.modal-dialog.primary .modal-footer {
+    background-color: var(--color-primary-2);
+    border-color: var(--color-primary-1);
+    color: var(--color-primary-1);
+}
+
+/*--------------------------------------*/
+/* Color Coding: Secondary */
+/*--------------------------------------*/
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary.outline,
+.btn-secondary.semi {
+    border-color: var(--color-secondary-1);
+}
+
+.btn-secondary,
+.btn-secondary.outline:hover,
+.btn-secondary.semi:hover {
+    background-color: var(--color-secondary-1);
+}
+
+.btn-secondary.semi {
+    background-color: var(--color-secondary-2);
+}
+
+.btn-secondary.outline,
+.btn-secondary.semi,
+.btn-secondary:hover {
+    color: var(--color-secondary-1);
+}
+
+.secondary .accordion-title,
+.secondary.alert,
+blockquote.secondary {
+    background-color: var(--color-secondary-2);
+    border-color: var(--color-secondary-1);
+    color: var(--color-secondary-1);
+}
+
+.modal-dialog.secondary,
+.modal-dialog.secondary .modal-header,
+.modal-dialog.secondary .modal-footer {
+    background-color: var(--color-secondary-2);
+    border-color: var(--color-secondary-1);
+    color: var(--color-secondary-1);
+}
+
+/*--------------------------------------*/
+/* Color Coding: Info */
+/*--------------------------------------*/
+
+.btn-info,
+.btn-info:hover,
+.btn-info.outline,
+.btn-info.semi {
+    border-color: var(--color-info-1);
+}
+
+.btn-info,
+.btn-info.outline:hover,
+.btn-info.semi:hover {
+    background-color: var(--color-info-1);
+}
+
+.btn-info.semi {
+    background-color: var(--color-info-2);
+}
+
+.btn-info.outline,
+.btn-info.semi,
+.btn-info:hover {
+    color: var(--color-info-1);
+}
+
+.info .accordion-title,
+.info.alert,
+blockquote.info {
+    background-color: var(--color-info-2);
+    border-color: var(--color-info-1);
+    color: var(--color-info-1);
+}
+
+/*--------------------------------------*/
+/* Color Coding: Success */
+/*--------------------------------------*/
+
+.btn-success,
+.btn-success:hover,
+.btn-success.outline,
+.btn-success.semi {
+    border-color: var(--color-success-1);
+}
+
+.btn-success,
+.btn-success.outline:hover,
+.btn-success.semi:hover {
+    background-color: var(--color-success-1);
+}
+
+.btn-success.semi {
+    background-color: var(--color-success-2);
+}
+
+.btn-success.outline,
+.btn-success.semi,
+.btn-success:hover {
+    color: var(--color-success-1);
+}
+
+.success .accordion-title,
+.success.alert,
+blockquote.success {
+    background-color: var(--color-success-2);
+    border-color: var(--color-success-1);
+    color: var(--color-success-1);
+}
+
+/*--------------------------------------*/
+/* Color Coding: Warning */
+/*--------------------------------------*/
+
+.btn-warning,
+.btn-warning:hover,
+.btn-warning.outline,
+.btn-warning.semi {
+    border-color: var(--color-warning-1);
+}
+
+.btn-warning,
+.btn-warning.outline:hover,
+.btn-warning.semi:hover {
+    background-color: var(--color-warning-1);
+}
+
+.btn-warning.semi {
+    background-color: var(--color-warning-2);
+}
+
+.btn-warning.outline,
+.btn-warning.semi,
+.btn-warning:hover {
+    color: var(--color-warning-1);
+}
+
+.warning .accordion-title,
+.warning.alert,
+blockquote.warning {
+    background-color: var(--color-warning-2);
+    border-color: var(--color-warning-1);
+    color: var(--color-warning-1);
+}
+
+/*--------------------------------------*/
+/* Color Coding: Danger */
+/*--------------------------------------*/
+
+.btn-danger,
+.btn-danger:hover,
+.btn-danger.outline,
+.btn-danger.semi {
+    border-color: var(--color-danger-1);
+}
+
+.btn-danger,
+.btn-danger.outline:hover,
+.btn-danger.semi:hover {
+    background-color: var(--color-danger-1);
+}
+
+.btn-danger.semi {
+    background-color: var(--color-danger-2);
+}
+
+.btn-danger.outline,
+.btn-danger.semi,
+.btn-danger:hover {
+    color: var(--color-danger-1);
+}
+
+.danger .accordion-title,
+.danger.alert,
+blockquote.danger {
+    background-color: var(--color-danger-2);
+    border-color: var(--color-danger-1);
+    color: var(--color-danger-1);
+}

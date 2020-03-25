@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8" />
+    <title>V4 Sample - Profile Update</title>
+    <link type="text/css" rel="stylesheet" href="../resources/00-variables.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/01-base.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/02-grid.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/03-mods_inputs.css" />
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .app-wrapper {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .app-sidebar {
+            background-color: #222;
+            color: #fff;
+            height: 100%;
+            left: -200px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;            
+            width: 200px;
+            z-index: 2;
+        }
+        .app-sidebar.open {
+            left: 0;
+        }
+        .app-sidebar a {
+            color: inherit;
+            padding: .5rem;
+        }
+        .app-sidebar .title {
+            display: inline;
+        }
+
+        @media (min-width: 768px) {
+            .app-wrapper {
+                padding-left: 50px;
+            }
+            .app-sidebar {
+                left: 0;
+                transition: left .3s ease, width .3s ease;
+                width: 50px;
+            }
+            .app-sidebar:hover {
+                width: 200px;
+            }
+            .app-sidebar .title {
+                display: none;
+            }
+            .app-sidebar:hover .title{
+                display: inline;
+            }
+
+        }
+
+        .app-content {
+            background-color: #fcfcfc;
+            height: 100%;
+            padding-top: 60px;
+            position: relative;
+        }
+        .app-content_header {
+            background-color: #fff;
+            border-bottom: 1px solid #aaa;
+            font-size: 2em;
+            left: 0;
+            padding: 1rem;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: inherit;
+        }
+
+        .app-content_container {
+            height: 100%;
+            overflow: auto;
+            padding: 1rem;
+        }
+
+        .profile-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            display: block;
+            padding: 1rem;
+        }
+    </style>
+</head>
+    <body>
+        <div class="app-wrapper">
+            <aside class="app-sidebar">
+                <nav>
+                    <ul>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="app-content">
+                <header class="app-content_header">Profile</header>
+                <div class="app-content_container">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <div class="profile-box">Image</div>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <div class="profile-box">
+                                <h2>Update Profile</h2>
+                                <ul class="list-grid up-1 md-up-2">
+                                    <li class="col">
+                                        <div class="form-group">
+                                            <label class="form-label">Name</label>
+                                            <input type="text" />
+                                        </div>
+                                    </li>
+                                    <li class="col">
+                                        <div class="form-group">
+                                            <label class="form-label">SSO ID Number</label>
+                                            <input type="text" />
+                                        </div>
+                                    </li>
+                                    <li class="col">
+                                        <div class="form-group">
+                                            <label class="form-label">Email</label>
+                                            <input type="text" />
+                                        </div>
+                                    </li>
+                                    <li class="col">
+                                        <div class="form-group">
+                                            <label class="form-label">Phone Number</label>
+                                            <input type="text" />
+                                        </div>
+                                    </li>
+                                    <li class="col">
+                                        <div class="form-group">
+                                            <label class="form-label">Role</label>
+                                            <select>
+                                                <option>Admin</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-grid up-1 md-up-2">
+                                    <li class="col">
+                                        <div class="form-group">
+                                            <label class="form-label">Old Password</label>
+                                            <input type="text" />
+                                        </div>
+                                    </li>
+                                    <li class="col">
+                                        <div class="form-group">
+                                            <label class="form-label">New Password</label>
+                                            <input type="text" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <input type="button" value="Submit" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

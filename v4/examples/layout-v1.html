@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8" />
+    <title>V4 Sample - Layout Flat Admin</title>
+    <link type="text/css" rel="stylesheet" href="../resources/00-variables.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/01-base.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/02-grid.css" />
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+        .app-wrapper {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .app-sidebar {
+            background-color: #222;
+            color: #fff;
+            height: 100%;
+            left: -200px;
+            overflow: hidden;
+            position: absolute;
+            top: 0;            
+            width: 200px;
+            z-index: 2;
+        }
+        .app-sidebar.open {
+            left: 0;
+        }
+        .app-sidebar a {
+            color: inherit;
+            padding: .5rem;
+        }
+        .app-sidebar .title {
+            display: inline;
+        }
+
+        @media (min-width: 768px) {
+            .app-wrapper {
+                padding-left: 50px;
+            }
+            .app-sidebar {
+                left: 0;
+                transition: left .3s ease, width .3s ease;
+                width: 50px;
+            }
+            .app-sidebar:hover {
+                width: 200px;
+            }
+            .app-sidebar .title {
+                display: none;
+            }
+            .app-sidebar:hover .title{
+                display: inline;
+            }
+
+        }
+
+        .app-content {
+            background-color: #fcfcfc;
+            height: 100%;
+            padding-top: 60px;
+            position: relative;
+        }
+        .app-content_header {
+            background-color: #fff;
+            border-bottom: 1px solid #aaa;
+            font-size: 2em;
+            left: 0;
+            padding: 1rem;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: inherit;
+        }
+
+        .app-content_container {
+            height: 100%;
+            overflow: auto;
+            padding: 1rem;
+        }
+
+        .app-content_article {
+            background-color: #fff;
+            border: 1px solid #bbb;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+        .app-content_section {
+            margin-bottom: 1rem;
+        }
+
+        .app-content_article.content-segmented {
+            background: none;
+            border: none;
+            padding: 0;
+        }        
+
+        .content-segmented .app-content_section {
+            background-color: #fff;
+            border: 1px solid #bbb;
+            border-left-width: 5px;
+            padding: 1rem;
+        }
+    </style>
+</head>
+    <body>
+        <div class="app-wrapper">
+            <aside class="app-sidebar">
+                <nav>
+                    <ul>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                        <li><a><i>@</i><span class="title">Link</span></a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="app-content">
+                <header class="app-content_header">App Header</header>
+                <div class="app-content_container">
+                    <article class="app-content_article">
+                        <section class="app-content_section">
+                            <h2>App Section</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </section>
+                        <section class="app-content_section">
+                            <h2>App Section</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </section>
+                    </article>
+
+                    <article class="app-content_article content-segmented">
+                        <section class="app-content_section">
+                            <h2>App Section</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </section>
+                        <section class="app-content_section">
+                            <h2>App Section</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </section>
+                        <section class="app-content_section">
+                            <h2>App Section</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

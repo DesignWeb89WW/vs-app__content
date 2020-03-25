@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>V4 Sample - Forms</title>
+    <link type="text/css" rel="stylesheet" href="../resources/00-variables.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/01-base.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/02-grid.css" />
+    <link type="text/css" rel="stylesheet" href="../resources/03-mods_inputs.css" />
+
+    <style>
+        .container {
+            max-width: 1200px;
+        }
+
+        h1 {
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+            padding-top: 10px;
+        }
+
+        input, textarea {
+            margin-bottom: .4rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form Designs</h1>
+        <input type="text" placeholder="Text" />
+        <input type="password" placeholder="Password" />
+        <input type="file" placeholder="Upload File" />
+        <textarea placeholder="textarea"></textarea>
+        <select>
+            <option>Test</option>
+        </select>
+        <hr />
+        <input type="checkbox" />
+        <input type="radio" />
+        <div class="form-asp-input">
+            <input type="radio" />
+            <label>ASP Input</label>
+        </div>
+        <table class="form-asp-input__group">
+            <tbody>
+                <tr>
+                    <td><input type="radio" name="test" id="test1" /><label for="test1">1</label></td>
+                    <td><input type="radio" name="test" id="test2" /><label for="test2">2</label></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

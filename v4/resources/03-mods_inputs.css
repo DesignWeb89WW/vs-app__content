@@ -1,0 +1,145 @@
+.form-asp-input, .form-asp-input__switch {
+	display: inline-block;
+	position: relative;
+}
+
+.form-asp-input__group,
+.form-asp-toggle {
+	width: auto;
+}
+
+.form-asp-input__group tbody td,
+.form-asp-toggle tbody td {
+    border: none;
+    line-height: 1.5;
+    padding: 0;
+    position: relative;
+}
+
+.form-asp-input input,
+.form-asp-input__group input,
+.form-asp-toggle input {
+    left: 1px;
+    margin: 0;
+    position: absolute;
+    top: 3px;
+}
+
+.form-asp-input label,
+.form-asp-input__group label,
+.form-asp-toggle label {
+    cursor: pointer;
+    display: block;
+    font-size: .9em;
+    margin: 0;
+    padding: 4px .8rem 5px 1.5rem;
+    position: relative;
+}
+
+.form-asp-input__switch input {
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+
+.form-label,
+.col-form-label {
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-group,
+.form-row {
+    clear: both;
+    display: block;
+    margin-bottom: var(--spacing-1);
+    padding: 0;
+}
+
+.form-group:only-of-type,
+.form-row:only-of-type {
+    margin-bottom: 0;
+}
+
+.form-row {
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    list-style: none;
+    margin-left: -.5rem;
+    margin-right: -.5rem;
+}
+
+.form-row:last-child {
+    margin-bottom: 0;
+}
+
+.form-row > .form-label,
+.form-row > .col-form-label,
+.form-row > .col {
+    display: block;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .form-row > .form-label,
+    .form-row > .col-form-label {
+        padding-top: 12px;
+    }
+
+    .form-row .form-asp-input,
+    .form-row .form-asp-input__group,
+    .form-row .form-asp-toggle {
+        margin-top: 12px;
+    }
+
+    .form-row > .form-label,
+    .form-row > .col-form-label,
+    .form-row > .col {
+        flex-basis: 0;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .fr-1-11 .form-row > .form-label,
+    .fr-1-11 .form-row > .col-form-label {
+        max-width: 8.33333%;
+    }
+
+    .fr-1-11 .form-row > .col {
+        max-width: 91.66667%;
+    }
+
+    .fr-2-10 .form-row > .form-label,
+    .fr-2-10 .form-row > .col-form-label {
+        max-width: 16.66667%;
+    }
+
+    .fr-2-10 .form-row > .col {
+        max-width: 83.33333%;
+    }
+
+    .fr-3-9 .form-row > .form-label,
+    .fr-3-9 .form-row > .col-form-label {
+        max-width: 25%;
+    }
+
+    .fr-3-9 .form-row > .col {
+        max-width: 75%;
+    }
+
+    .fr-4-8 .form-row > .form-label,
+    .fr-4-8 .form-row > .col-form-label {
+        max-width: 33.33333%;
+    }
+
+    .fr-4-8 .form-row > .col {
+        max-width: 66.66667%;
+    }
+}
