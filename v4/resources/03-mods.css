@@ -1,7 +1,7 @@
 /*
 * Document Name: 03-mods.css
 * Document Type: Stylesheet
-* Purpose: Custom Properties for styling components and mods
+* Purpose: Custom Properties for styling components and mods version 4
 */
 
 /*-----------------------------------------------*/
@@ -43,7 +43,7 @@
 /*-----------------------------------------------*/
 
 .accordion {
-    font-size: 13px;
+    font-size: 11px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -55,21 +55,13 @@
     margin-bottom: .6rem;
 }
 
-.accordion-title {
-    background-color: var(--color-info-1);
-    border: 1px solid var(--color-info-1);
-    color: #fff;
+.accordion-title {    
     display: block;
     font-weight: 700;
     letter-spacing: 1px;
     padding: .8rem;
     position: relative;
     text-decoration: none;
-}
-
-.accordion-title.open {
-    background-color: var(--color-info-2);
-    color: var(--color-info-1);
 }
 
 .accordion-content {
@@ -99,9 +91,21 @@
     content: "\2212";
 }
 
-.accordion-content {
+.primary .accordion-title {
+    background-color: var(--color-primary-1);
+    border: 1px solid var(--color-primary-1);
+    color: #fff;
+    padding: .8rem;
+}
+
+.primary .accordion-title.open {
+    background-color: var(--color-primary-2);
+    color: var(--color-info-1);
+}
+
+.primary .accordion-content {
     background-color: var(--color-white);
-    border: 1px solid var(--color-info-1);
+    border: 1px solid var(--color-primary-1);
     border-top: 0;
 }
 
@@ -209,10 +213,13 @@
 .modal-footer {
     border-top: var(--standard-border);
     padding: 1em 1.2em;
+    text-align: right;
 }
 
 .modal-footer button,
-.modal-footer .button {
+.modal-footer input,
+.modal-footer .button,
+.modal-footer .btn {
     margin: 0;
 }
 
@@ -267,25 +274,95 @@ body.modal-active {
 .modal-popup__header {
     background-color: #fcfcfc;
     font-size: 1.3rem;
-    margin: -1rem -1rem 1rem;
+    margin: var(--marg-header);
     padding: 1rem;
+}
+
+/*-----------------------------------------------*/
+/* CLASSES: DROPDOWN */
+/*-----------------------------------------------*/
+
+.ui-dropdown {
+    position: relative;
+}
+
+.ui-dropdown-menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #000;
+    display: none;
+    font-size: 11px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 100%;
+    width: 150px;
+    z-index: 3;
+}
+
+.ui-dropdown-menu.open {
+    display: block;
+}
+
+.ui-dropdown-menu_items {
+    display: block;
+    margin: 0;
+}
+
+.ui-dropdown-menu_items + .ui-dropdown-menu_items {
+    border-top: 1px solid #ccc;
+}
+
+.ui-dropdown-menu span,
+.ui-dropdown-menu a,
+.ui-dropdown-menu .dummy-btn {
+    color: inherit;
+    display: block;
+    padding: .7rem 1.2rem;
+}
+
+.ui-dropdown-menu span:hover,
+.ui-dropdown-menu a:hover,
+.ui-dropdown-menu .dummy-btn:hover {
+    background-color: var(--color-secondary-2);
+}
+
+.ui-dropdown-menu .fa {
+    left: 3px;
+    position: absolute;
 }
 
 /*-----------------------------------------------*/
 /* CLASSES: STRUCTURE ELEMENTS */
 /*-----------------------------------------------*/
 
-.guide-section {
+.ui-section {
+    background-color: var(--color-white);
+    border-radius: .4rem;
     box-shadow: 0 5px 4px rgba(0,0,0,.7);
     display: block;
-    margin: 0 0 1rem;
+    margin: 0 0 1.3rem;
+    overflow: hidden;
     padding: 1rem;
     position: relative;
 }
 
-.guide-section > header {
-    margin: -1rem -1rem 1rem;
+.ui-section > header {
+    background-color: #dfdfdf;
+    font-weight: 700;
+    margin: var(--marg-header);
     padding: 1rem;
+}
+
+.jumbotron {
+    background-color: #e9ecef;
+    border: .2rem solid #f7f7f9;
+    border-radius: .3rem;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
 }
 
 /*-----------------------------------------------*/

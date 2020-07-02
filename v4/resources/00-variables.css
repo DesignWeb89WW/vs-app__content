@@ -29,18 +29,26 @@
     --color-warning-1: #faa05a;
     --color-warning-2: #fff6ee;
     /*------------------*/
+    /*BOX SIZING*/
+    /*------------------*/
+    --boxsiz-border: border-box;
+    --boxsiz-content: content-box;
+    --boxsiz-inherit: inherit;
+    /*------------------*/
     /*MARGINS*/
     /*------------------*/
     --margin-tb1: 1rem 0;
     --spacing-1: 1rem;
     --spacing-2: 2rem;
     --spacing-3: 3rem;
+    --spacing-4: 4rem;
     --space-listing: 1.6em;
+    --marg-header: -1rem -1rem 1rem;
     /*------------------*/
     /*GRID SYSTEM*/
     /*------------------*/
-    --col-margin: -.5rem;
-    --col-padding: .5rem;
+    --col-margin: -1rem;
+    --col-padding: 1rem;
     /* Column Grid Widths */
     --width-1: 8.333333%;
     --width-2: 16.666667%;
@@ -78,4 +86,9 @@
     --flex-width-cs-eights: 0 0 var(--width-cs_eights);
     --flex-width-cs-nines: 0 0 var(--width-cs_nines);
     --flex-width-cs-tens: 0 0 var(--width-cs_tens);
+    /*------------------*/
+    /*APP VARIABLES*/
+    /*------------------*/
+    --menu-width-open: 150px;
+    --menu-width-close: 40px;
 }

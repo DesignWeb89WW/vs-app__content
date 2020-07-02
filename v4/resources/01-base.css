@@ -41,7 +41,7 @@ blockquote {
     background-color: #fff;
     border-style: solid;
     border-width: 1px 1px 1px 4px;
-    margin: 1rem 0;
+    margin: var(--margin-tb1);
     padding: .8rem;
 }
 
@@ -79,38 +79,38 @@ p:only-of-type {
 /*ELEMENTS: HEADINGS*/
 /*------------------------------------------*/
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
     display: block;
     font-weight: 700;
     margin: 0 0 var(--spacing-1);
 }
 
-h1 {
+h1, .h1 {
     font-size: 2em;
 }
 
-h2 {
+h2, .h2 {
     font-size: 1.75em;
 }
 
-h3 {
+h3, .h3 {
     font-size: 1.5em;
 }
 
-h4 {
+h4, .h4 {
     font-size: 1.3em;
 }
 
-h5 {
+h5, .h5 {
     font-size: .9em;
 }
 
-h6 {
+h6, .h6 {
     font-size: .8em;
 }
 
@@ -120,7 +120,7 @@ h6 {
 
 ul,
 ol {
-    margin: 1rem 0;
+    margin: var(--margin-tb1);
     padding-left: 1.2rem;
 }
 
@@ -151,10 +151,11 @@ dt {
 
 table {
     background-color: #fff;
+    border: none;
     border-collapse: collapse;
     border-spacing: 0;
     font-size: 11px;
-    margin: 1rem 0;
+    margin: var(--margin-tb1);
     max-width: 100%;
     width: 100%;
 }
@@ -167,12 +168,17 @@ table.fixed {
     table-layout: fixed;
 }
 
+table table {
+    width: auto;
+}
+
 table > thead > tr > th,
 table > tbody > tr > th,
 table > tbody > tr > td,
 table > tfoot > tr > th,
 table > tfoot > tr > td {
-    border: var(--standard-border);
+    border: none;
+    border-bottom: var(--standard-border);
     padding: .5rem;
     text-align: left;
 }
@@ -180,6 +186,11 @@ table > tfoot > tr > td {
 table.text-center th,
 table.text-center td {
     text-align: center;
+}
+
+table.bordered tr > th,
+table.bordered tr > td {
+    border: var(--standard-border);
 }
 
 table.hover tbody > tr:hover,
@@ -276,6 +287,7 @@ select:focus {
     position: relative;
     text-align: center;
     text-transform: capitalize;
+    vertical-align: middle;
 }
 
 .button::-moz-focus-inner,
@@ -300,6 +312,17 @@ select:focus {
     color: #333;
     border-color: #888;
     outline: 0;
+}
+
+.btn-icon {
+    padding-left: 1.1rem;
+}
+
+.btn-icon .fa,
+.btn-icon .glyphicon {
+    left: .35rem;
+    position: absolute;
+    top: .396rem;
 }
 
 [type="radio"],
@@ -388,21 +411,28 @@ figure {
     display: block;
 }
 
-nav ul {
+nav ul,
+.nav ul,
+ul.nav {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 nav li,
-nav a {
+nav a,
+.nav li,
+.nav a {
     display: block;
     margin: 0;
 }
 
 nav button,
 nav [type="button"],
-nav [type="submit"] {
+nav [type="submit"],
+.nav button,
+.nav [type="button"],
+.nav [type="submit"] {
     border: none;
     border-radius: 0;
     display: block;
@@ -464,6 +494,33 @@ nav [type="submit"] {
     display: block;
 }
 
+.inline-b {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+    display: -ms-flexbox;
+    list-style: none;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-700, .bold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.emp-bu, .bold-underline {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 .sr-only {
     display: none;
     height: 1px;
@@ -480,27 +537,27 @@ nav [type="submit"] {
     margin: 0 !important;
 }
 
-.mb1 {
+.mb1, .my1 {
     margin-bottom: var(--spacing-1) !important;
 }
 
-.mb2 {
+.mb2, .my2 {
     margin-bottom: var(--spacing-2) !important;
 }
 
-.mb3 {
+.mb3, .my3 {
     margin-bottom: var(--spacing-3) !important;
 }
 
-.mt1 {
+.mt1, .my1 {
     margin-top: var(--spacing-1) !important;
 }
 
-.mt2 {
+.mt2, .my2 {
     margin-top: var(--spacing-2) !important;
 }
 
-.mt3 {
+.mt3, .my3 {
     margin-top: var(--spacing-3) !important;
 }
 
@@ -512,7 +569,7 @@ nav [type="submit"] {
 
 .list-inline {
     list-style: none;
-    margin: 1rem 0;
+    margin: 0 0 5px;
     padding: 0;
 }
 
@@ -522,6 +579,11 @@ nav [type="submit"] {
     margin-right: 8px;
     position: relative;
     vertical-align: middle;
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 ul.browser-reset {
@@ -634,33 +696,33 @@ button.browser-reset {
     width: 100%;
 }
 
-.data-tbl-gridview tbody > tr > td[colspan] {
+.data-tbl-gv tbody > tr > td[colspan] {
     background-color: var(--color-info-2);
 }
 
-.data-tbl-gridview table {
+.data-tbl-gv table {
     margin: 0;
     width: auto;
 }
 
-.data-tbl-gridview table td {
+.data-tbl-gv table td {
     padding: 0;
 }
 
-.data-tbl-gridview table td a,
-.data-tbl-gridview table td span {
+.data-tbl-gv table td a,
+.data-tbl-gv table td span {
     display: block;
     line-height: 1;
     padding: .4rem .6rem;
     text-decoration: none;
 }
 
-.data-tbl-gridview table td + td a,
-.data-tbl-gridview table td + td span {
+.data-tbl-gv table td + td a,
+.data-tbl-gv table td + td span {
     border-left: 0;
 }
 
-.data-tbl-gridview .btn,
+.data-tbl-gv .btn,
 .data-tbl-repeater .btn {
     font-size: 10px;
     margin: 0;

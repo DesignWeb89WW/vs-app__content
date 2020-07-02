@@ -1,3 +1,9 @@
+/*
+* Document Name: 03-mods_inputs.css
+* Document Type: Stylesheet
+* Purpose: Custom Properties for styling form containers version 4
+*/
+
 .form-asp-input, .form-asp-input__switch {
 	display: inline-block;
 	position: relative;
@@ -96,7 +102,7 @@
     .form-row .form-asp-input,
     .form-row .form-asp-input__group,
     .form-row .form-asp-toggle {
-        margin-top: 12px;
+        margin-top: 8px;
     }
 
     .form-row > .form-label,

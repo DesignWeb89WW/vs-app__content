@@ -1,7 +1,7 @@
 /*
 * Document Name: 02-grid.css
 * Document Type: Stylesheet
-* Purpose: Classes for grid system, combines Bootstrap, Zurb Foundation, Materialize
+* Purpose: Classes for grid system, combines Bootstrap, Zurb Foundation, Materialize Version 4
 */
 
 .container,
@@ -177,7 +177,7 @@
 .up-5 > .col {
     -ms-flex: var(--flex-width-cs-fifth);
     flex: var(--flex-width-cs-fifth);
-    max-width: var(--width-cs-fifth);
+    max-width: var(--width-cs_fifth);
 }
 
 .up-6 > .col {
@@ -189,25 +189,25 @@
 .up-7 > .col {
     -ms-flex: var(--flex-width-cs-sevens);
     flex: var(--flex-width-cs-sevens);
-    max-width: var(--width-cs-sevens);
+    max-width: var(--width-cs_sevens);
 }
 
 .up-8 > .col {
     -ms-flex: var(--flex-width-cs-eights);
     flex: var(--flex-width-cs-eights);
-    max-width: var(--width-cs-eights);
+    max-width: var(--width-cs_eights);
 }
 
 .up-9 > .col {
     -ms-flex: var(--flex-width-cs-nines);
     flex: var(--flex-width-cs-nines);
-    max-width: var(--width-cs-nines);
+    max-width: var(--width-cs_nines);
 }
 
 .up-10 > .col {
     -ms-flex: var(--flex-width-cs-tens);
     flex: var(--flex-width-cs-tens);
-    max-width: var(--width-cs-tens);
+    max-width: var(--width-cs_tens);
 }
 
 .up-12 > .col {
@@ -445,7 +445,7 @@
     .sm-up-5 > .col {
         -ms-flex: var(--flex-width-cs-fifth);
         flex: var(--flex-width-cs-fifth);
-        max-width: var(--width-cs-fifth);
+        max-width: var(--width-cs_fifth);
     }
     
     .sm-up-6 > .col {
@@ -457,25 +457,25 @@
     .sm-up-7 > .col {
         -ms-flex: var(--flex-width-cs-sevens);
         flex: var(--flex-width-cs-sevens);
-        max-width: var(--width-cs-sevens);
+        max-width: var(--width-cs_sevens);
     }
     
     .sm-up-8 > .col {
         -ms-flex: var(--flex-width-cs-eights);
         flex: var(--flex-width-cs-eights);
-        max-width: var(--width-cs-eights);
+        max-width: var(--width-cs_eights);
     }
     
     .sm-up-9 > .col {
         -ms-flex: var(--flex-width-cs-nines);
         flex: var(--flex-width-cs-nines);
-        max-width: var(--width-cs-nines);
+        max-width: var(--width-cs_nines);
     }
     
     .sm-up-10 > .col {
         -ms-flex: var(--flex-width-cs-tens);
         flex: var(--flex-width-cs-tens);
-        max-width: var(--width-cs-tens);
+        max-width: var(--width-cs_tens);
     }
     
     .sm-up-12 > .col {
@@ -689,7 +689,7 @@
     .md-up-5 > .col {
         -ms-flex: var(--flex-width-cs-fifth);
         flex: var(--flex-width-cs-fifth);
-        max-width: var(--width-cs-fifth);
+        max-width: var(--width-cs_fifth);
     }
     
     .md-up-6 > .col {
@@ -701,25 +701,25 @@
     .md-up-7 > .col {
         -ms-flex: var(--flex-width-cs-sevens);
         flex: var(--flex-width-cs-sevens);
-        max-width: var(--width-cs-sevens);
+        max-width: var(--width-cs_sevens);
     }
     
     .md-up-8 > .col {
         -ms-flex: var(--flex-width-cs-eights);
         flex: var(--flex-width-cs-eights);
-        max-width: var(--width-cs-eights);
+        max-width: var(--width-cs_eights);
     }
     
     .md-up-9 > .col {
         -ms-flex: var(--flex-width-cs-nines);
         flex: var(--flex-width-cs-nines);
-        max-width: var(--width-cs-nines);
+        max-width: var(--width-cs_nines);
     }
     
     .md-up-10 > .col {
         -ms-flex: var(--flex-width-cs-tens);
         flex: var(--flex-width-cs-tens);
-        max-width: var(--width-cs-tens);
+        max-width: var(--width-cs_tens);
     }
     
     .md-up-12 > .col {
@@ -933,7 +933,7 @@
     .lg-up-5 > .col {
         -ms-flex: var(--flex-width-cs-fifth);
         flex: var(--flex-width-cs-fifth);
-        max-width: var(--width-cs-fifth);
+        max-width: var(--width-cs_fifth);
     }
     
     .lg-up-6 > .col {
@@ -945,25 +945,25 @@
     .lg-up-7 > .col {
         -ms-flex: var(--flex-width-cs-sevens);
         flex: var(--flex-width-cs-sevens);
-        max-width: var(--width-cs-sevens);
+        max-width: var(--width-cs_sevens);
     }
     
     .lg-up-8 > .col {
         -ms-flex: var(--flex-width-cs-eights);
         flex: var(--flex-width-cs-eights);
-        max-width: var(--width-cs-eights);
+        max-width: var(--width-cs_eights);
     }
     
     .lg-up-9 > .col {
         -ms-flex: var(--flex-width-cs-nines);
         flex: var(--flex-width-cs-nines);
-        max-width: var(--width-cs-nines);
+        max-width: var(--width-cs_nines);
     }
     
     .lg-up-10 > .col {
         -ms-flex: var(--flex-width-cs-tens);
         flex: var(--flex-width-cs-tens);
-        max-width: var(--width-cs-tens);
+        max-width: var(--width-cs_tens);
     }
     
     .lg-up-12 > .col {
@@ -1177,7 +1177,7 @@
     .xl-up-5 > .col {
         -ms-flex: var(--flex-width-cs-fifth);
         flex: var(--flex-width-cs-fifth);
-        max-width: var(--width-cs-fifth);
+        max-width: var(--width-cs_fifth);
     }
     
     .xl-up-6 > .col {
@@ -1189,25 +1189,25 @@
     .xl-up-7 > .col {
         -ms-flex: var(--flex-width-cs-sevens);
         flex: var(--flex-width-cs-sevens);
-        max-width: var(--width-cs-sevens);
+        max-width: var(--width-cs_sevens);
     }
     
     .xl-up-8 > .col {
         -ms-flex: var(--flex-width-cs-eights);
         flex: var(--flex-width-cs-eights);
-        max-width: var(--width-cs-eights);
+        max-width: var(--width-cs_eights);
     }
     
     .xl-up-9 > .col {
         -ms-flex: var(--flex-width-cs-nines);
         flex: var(--flex-width-cs-nines);
-        max-width: var(--width-cs-nines);
+        max-width: var(--width-cs_nines);
     }
     
     .xl-up-10 > .col {
         -ms-flex: var(--flex-width-cs-tens);
         flex: var(--flex-width-cs-tens);
-        max-width: var(--width-cs-tens);
+        max-width: var(--width-cs_tens);
     }
     
     .xl-up-12 > .col {
